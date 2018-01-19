@@ -4,12 +4,35 @@ body {
 	font-family: arial;
 	margin: 0;
 	padding: 0;
-	background: white;
+	background: #F2F2F2;
+	height: 100%;
+}
+div.sidebar a:link {
+	text-decoration: none;
+	color: white;
+}
+div.sidebar a:visited {
+    color: #DAD8D8;
+}
+div.sidebar a:hover {
+	color: #DAD8D8;
+	text-decoration:underline;
+}
+
+div.sidebar a:active {
+    color: white;
 }
 
 ul {
-	list-style-type: circle;
 	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+li {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 h1 {
@@ -21,6 +44,7 @@ h2 {
 	font-size: 20px;
 	padding-bottom: 0px;
 	padding-top: 0px;
+	padding-left: 15px;
 }
 
 
@@ -28,10 +52,10 @@ h3 {
 	font-size: 15px;
 }
 
-li {
-	padding-left: 15px;
-	padding-bottom: 5px;
+p { 
+	padding-right: 5px;
 }
+
 
 div.header {
 	width: 100%;
@@ -46,22 +70,42 @@ div.header {
 }
 
 div.sidebar {
-	position: fixed;
-	height: 100%;
+	position: absolute;
 	width: 175px;
 	color: #F2F2F2;
-	background: #E21834;
+	background: #585858;
+	padding-bottom: 20000px; /*force max width */
+ 	margin-bottom: -20000px;
+	overflow: hidden;
 }
 
-div.sidebar.h2 {
-	font-size: 40px;
-}
 
 div.main {
-	position: fixed;
+	width: 80%;
+	position: absolute;
 	margin-left: 175px;
 	background: #F2F2F2;
-	height: 500px;
-	width: 100%;
 	padding-left: 25px;
+	float: left;
+	overflow: hidden;
+	padding-bottom: 20000px;
+ 	margin-bottom: -20000px;
 }
+
+
+table {
+	background: white;
+    border-collapse: collapse;
+	border-color: black;
+}
+
+th {
+	background: #E5E4E4;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+;
+}
+
