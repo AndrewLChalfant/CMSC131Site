@@ -40,7 +40,7 @@ h1 {
 	color: 131313;
 }
 
-h2 {
+div.sidebar h2 {
 	font-size: 20px;
 	padding-bottom: 0px;
 	padding-top: 0px;
@@ -64,7 +64,8 @@ div.header {
 	background: white;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	color: #E21834;
+	/* color: #E21834; */
+	color: #585858;
 	text-align: center;
 
 }
