@@ -47,13 +47,18 @@ div.sidebar h2 {
 	padding-left: 15px;
 }
 
-
+div.main h2 {
+	margin: 0;
+}
 h3 {
 	font-size: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0;
 }
 
 p { 
-	padding-right: 5px;
+	margin-top: 5px;
 }
 
 
@@ -62,8 +67,8 @@ div.header {
 	height: 25%;
 	font-size: 18px;
 	background: white;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	/* color: #E21834; */
 	color: #585858;
 	text-align: center;
@@ -82,11 +87,11 @@ div.sidebar {
 
 
 div.main {
-	width: 80%;
+	width: 82%;
 	position: absolute;
 	margin-left: 175px;
 	background: #F2F2F2;
-	padding-left: 25px;
+	padding-left: 40px;
 	float: left;
 	overflow: hidden;
 	padding-bottom: 20000px;
