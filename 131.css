@@ -11,9 +11,6 @@ div.sidebar a:link {
 	text-decoration: none;
 	color: white;
 }
-div.sidebar a:visited {
-    color: #DAD8D8;
-}
 
 
 div.sidebar a:active {
@@ -106,8 +103,7 @@ div.header {
 div.main {
 	padding-left: 50px;
 	overflow: hidden;
-	padding-bottom: 20000px;
- 	margin-bottom: -20000px;
+	padding-right: 50px;
 }
 
 
@@ -115,7 +111,7 @@ table {
 	background: white;
     border-collapse: collapse;
 	border: #B7B7B7;
-	width: calc(100% - 50px);
+	width: calc(100% - 20px);
 }
 
 th {
