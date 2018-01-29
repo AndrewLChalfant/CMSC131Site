@@ -7,225 +7,374 @@
 <style></style>
 <link rel="shortcut icon" href="https://www.cs.umd.edu/sites/all/themes/cs/favicon.ico" type="image/vnd.microsoft.icon">
 <link href="131.css" rel="stylesheet" type="text/css">
+<style>
+/* Table made by Austin Starnes */
+#schedule {
+	border-collapse: unset;
+	border: unset;
+}
+#schedule td {
+	width: 8em;
+	padding: .5em;
+	margin: unset;
+	border: unset;
+	border-spacing: 2px;
+}
+#schedule th {
+	background: unset;
+	text-align: center;
+}
+	
+.time {
+	vertical-align: top;
+	text-align: right;
+	}
+	
+.half-hour {
+	height: 2em;
+	text-align: center;
+}
+	
+.hour {
+	height: 4em;
+	text-align: center;
+}
+	
+.hour-and-half {
+	height: 6em;
+	text-align: center;
+}
+.zero {
+	background: repeating-linear-gradient(  45deg,  #CCCCCC,  #CCCCCC 10px,  #FFFFFF 10px,  #FFFFFF 20px  );
+}
+.one {
+	background-color: #C79D9D;
+	color: white;
+}
+.two {
+	background-color: #7E5151;
+	color: white;
+}
+.three, .four {
+	background-color: #622D2D;
+	color: white;
+}
+.none {
+	background: repeating-linear-gradient(  45deg,  #CCCCCC,  #CCCCCC 10px,  #FFFFFF 10px,  #FFFFFF 20px  );
+}
+</style>
 </head>
 <body>
 <div class="header">
   <h1>CMSC 131-010x,030x,040x: Object-Oriented Programming I </h1>
   <h3>Taught by Ilchul Yoon: iyoon@cs.umd.edu and Roger Eastman: reastman@cs.umd.edu</h3>
 </div>
-
 <div class="sidebar">
   <ul style="padding-left: 40px">
     <li><a href="index.html">Course Syllabus</a></li>
     <li><a href="officehours.html">Office Hours</a></li>
-	<li><a href="resources.html">Resources</a></li>
-      <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Other</a>
-    <div class="dropdown-content">
-    <a href="https://www.elms.umd.edu/" target="new">ELMS</a>
-    <a href="https://grades.cs.umd.edu/" target="new">Grade Server</a>
-    <a href="https://gradescope.com" target="new">Gradescope</a>
-    <a href="https://submit.cs.umd.edu/" target="new">Submit Server</a>
-    <a href="https://piazza.com/class/jc97lqaji0w2wj" target="new">Piazza</a>
-		  </div>
-  </li>
+    <li><a href="resources.html">Resources</a></li>
+    <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn">Other</a>
+      <div class="dropdown-content"> <a href="https://www.elms.umd.edu/" target="new">ELMS</a> <a href="https://grades.cs.umd.edu/" target="new">Grade Server</a> <a href="https://gradescope.com" target="new">Gradescope</a> <a href="https://submit.cs.umd.edu/" target="new">Submit Server</a> <a href="https://piazza.com/class/jc97lqaji0w2wj" target="new">Piazza</a> </div>
+    </li>
   </ul>
-	</div>
-  <br>
-	
+</div>
+<br>
 <div class="main">
-      <h1 style="padding-top: 20px; font-size: 40px">Office Hours</h1>
-      <hr> <br>
-      <h2 style="padding-left: 5px ">Instructor Office Hours</h2>
-      <table width="800px" border="1">
-        <tbody>
-          <tr>
-            <td style="width: 30%;">Ilchul Yoon</td>
-            <td style="width: 20%;">AVW 3171</td>
-			<td>Tu/Th 11:30pm ~ 1:30pm</td>
-
-          </tr>
-          <tr>
-            <td>Roger Eastman</td>
-			<td>AVW 3239</td>
-            <td>Mon/Wed 11:00am ~ 12:00pm ; Tu: 9am - noon</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <h2 style="padding-left: 5px">TA Office Hours (held in AVW 1112)</h2>
+  <h1 style="padding-top: 20px; font-size: 40px">Office Hours</h1>
+  <hr>
+  <br>
+  <h2 style="padding-left: 5px ">Instructor Office Hours</h2>
+  <table width="800px" border="1">
+    <tbody>
+      <tr>
+        <td style="width: 30%;">Ilchul Yoon</td>
+        <td style="width: 20%;">AVW 3171</td>
+        <td>Tu/Th 11:30pm ~ 1:30pm</td>
+      </tr>
+      <tr>
+        <td>Roger Eastman</td>
+        <td>AVW 3239</td>
+        <td>Mon/Wed 11:00am ~ 12:00pm ; Tu: 9am - noon</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <h2 style="padding-left: 5px">TA Office Hours (held in AVW 1112)</h2>
+  <br>
+  <table border="1">
+    <tbody style="border: white">
+      <tr>
+        <td style="width: 250px">Monday/Wednesday: </td>
+        <td>10:00 AM - 12:00 PM and 1:00 PM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td>Tuesday/Thursday:</td>
+        <td>11:00 AM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday:</td>
+        <td>10:00 AM - 4:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <i>There are currently no office hours Wednesday 3:00 PM - 4:00 PM and Thursday 2:00 PM - 3:30 PM</i> <br>
+  <br>
+  <table width="800px" border="1">
+    <tbody>
+      <tr>
+        <th style="width: 30%; background: #F0F0F0;">Name</th>
+        <th style="width: 20%;  background: #F0F0F0;">Section</th>
+        <th scope="col" style=" background: #F0F0F0;">Office Hours</th>
+      </tr>
+      <tr>
+        <td>Austin Starnes</td>
+        <td>0101</td>
+        <td>Tuesday/Thursday 12:30 PM - 2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Joanna Shoemaker</td>
+        <td>0101</td>
+        <td>Tuesday 2:00 PM - 5:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Jasraj Singh</td>
+        <td>0103</td>
+        <td>Monday/Wednesday 11:00 AM - 12:00 PM, Friday 10:00 AM - 11:00 AM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Colin Chen</td>
+        <td>0103</td>
+        <td>Monday/Wednesday 11:00 AM - 12:00 PM, Friday 2:00 PM - 4:00 PM</td>
+      </tr>
+      <tr>
+        <td>Marc Haller</td>
+        <td>0104</td>
+        <td>Wednesday 6:00 PM - 7:00 PM, Friday 12:00 PM - 2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Jain Harshil Sanjay</td>
+        <td>0104</td>
+        <td>Monday 2:00 PM - 6:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Shriraj Gandhi</td>
+        <td>0301</td>
+        <td>Friday 10:00 AM - 1:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Matthew Chung</td>
+        <td>0301</td>
+        <td>Monday 1:00 PM - 3:00 PM, Wednesday 1:00 PM - 2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Michael L.</td>
+        <td>0302</td>
+        <td>Monday/Wednesday 11:00 AM - 12:00 PM, Friday 11:00 AM - 2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Jizhen Wang</td>
+        <td>0302</td>
+        <td>Monday 11:00 AM - 12:00 PM, Wednesday 11:00 AM - 12:00 PM, Friday 1:00 PM - 3:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Andrew Chalfant</td>
+        <td>0303</td>
+        <td>Tuesday/Thursday 12:30 PM - 2:00 PM, Wednesday 2:00 PM - 3:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Joseph Lui</td>
+        <td>0303</td>
+        <td>Monday 5:00 PM - 6:00 PM, Wednesday 5:00 PM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td>Jonathan Saewitz</td>
+        <td>0304</td>
+        <td>Tuesday/Thursday 6:30 PM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td>Minh Nguyen</td>
+        <td>0304</td>
+        <td>Tuesday/Thursday 5:00 PM - 6:30 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Cole Alban</td>
+        <td>0401</td>
+        <td>Monday 4:00 PM - 5:00 PM, Wednesday 5:00 PM - 8:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Saewon Kwak</td>
+        <td>0401</td>
+        <td>Monday/Wednesday/Friday 10:00 AM - 11:00 PM</td>
+      </tr>
+      <tr>
+        <td>Puneeth Bikkumanla</td>
+        <td>0402</td>
+        <td>Tuesday/Thursday 11:00 AM - 12:30 PM</td>
+      </tr>
+      <tr>
+        <td>Nathaniel Grammel</td>
+        <td>0402/0405</td>
+        <td>Tuesday 5:00 PM - 6:00 PM, Wednesday 1:00 PM - 2:00 PM, Thursday 11:00 PM - 12:30 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Pujitha Lava</td>
+        <td>0403</td>
+        <td>Tuesday 11:00 AM - 12:30 PM, Thursday 3:30 - 5:00</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Apoorv Bansal</td>
+        <td>0403</td>
+        <td>Monday 2:00 PM - 3:00 PM, Wednesday 1:00 PM - 3:00 PM, Friday 12:00 PM - 2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Chidiebele Udeze</td>
+        <td>0404</td>
+        <td>Tuesday/Thursday 6:30 PM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td>Nicholas Guan</td>
+        <td>0404</td>
+        <td>Tuesday/Thursday 12:30 PM - 2:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>William Poling</td>
+        <td>0405</td>
+        <td>Monday 4:00 PM - 5:00 PM, Wednesday 2:00 PM - 3:00 PM and 4:00 PM - 5:00 PM</td>
+      </tr>
+      <tr>
+        <td>Saadiq Shaik</td>
+        <td>0406</td>
+        <td>Monday/Wednesday 10:00 AM - 11:00 AM, Friday 10:00 AM - 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Yusuf Americianaki</td>
+        <td>0406</td>
+        <td>Tuesday/Thursday 3:30 - 5:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Ian Hammer</td>
+        <td>0407</td>
+        <td>Tuesday/Thursday 3:30 - 5:00 PM</td>
+      </tr>
+      <tr style="background: #F8F8F8;">
+        <td>Michael W.</td>
+        <td>0407</td>
+        <td>Monday 1:00 - 2:00 PM and 6:00 - 8:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
 	<br>
-<table border="1">
-  <tbody style="border: white">
-    <tr>
-      <td style="width: 250px">Monday/Wednesday: </td>
-      <td>10:00 AM - 8:00 PM</td>
-    </tr>
-    <tr>
-      <td>Tuesday/Thursday:</td>
-      <td>9:30 AM - 8:00 PM</td>
-    </tr>
-	      <tr>
-      <td>Friday:</td>
-      <td>10:00 AM - 4:00 PM</td>
-    </tr>
-  </tbody>
-</table>
 	<br>
-	<br>
-      <table width="800px" border="1">
-        <tbody>
-          <tr>
-            <th style="width: 30%; background: #F0F0F0;">Name</th>
-            <th style="width: 20%;  background: #F0F0F0;">Section</th>
-            <th scope="col" style=" background: #F0F0F0;">Office Hours</th>
-          </tr>
-          <tr>
-            <td>Austin Starnes</td>
-            <td>0101</td>
-            <td>Tuesday/Thursday 9:30 AM - 11:00 AM</td>
-          </tr>
-          <tr>
-            <td>Joanna Shoemaker</td>
-            <td>0101</td>
-            <td>Tuesday 2:00 PM - 5:00 PM</td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Jasraj Singh</td>
-            <td>0103</td>
-            <td>Monday/Wednesday 11:00 AM - 12:00 PM, Friday 10:00 AM - 11:00 AM</td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Colin Chen</td>
-            <td>0103</td>
-            <td>Monday/Wednesday 11:00 AM - 12:00 PM</td>
-          </tr>
-          <tr>
-            <td>Marc Haller</td>
-            <td>0104</td>
-            <td>Wednesday 11:00 AM - 12:00 PM, Friday 2:00 PM - 4:00 PM</td>
-          </tr>
-          <tr>
-            <td>Jain Harshil Sanjay</td>
-            <td>0104</td>
-            <td>Monday 2:00 PM - 6:00 PM, Thursday 2:00 PM - 3:00 PM </td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Shiraj Gandhi</td>
-            <td>0301</td>
-            <td>Friday 10:00 AM - 1:00 PM</td>
-          </tr>
-		<tr style="background: #F8F8F8;">
-            <td>Matthew Chung</td>
-            <td>0301</td>
-            <td>Monday 1:00 PM - 3:00 PM, Wednesday 1:00 PM - 2:00 PM</td>
-          </tr>
-          <tr>
-            <td>Michael Liu</td>
-            <td>0302</td>
-            <td>Monday 11:00 AM - 12:00 PM</td>
-          </tr>
-          <tr>
-            <td>Jizhen Wang</td>
-            <td>0302</td>
-            <td>Monday 11:00 AM - 12:00 PM, 6:00 PM - 7:00 PM, Wednesday 11:00 AM - 12:00 PM, 6:00 PM - 7:00 PM</td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Andrew Chalfant</td>
-            <td>0303</td>
-            <td>Tuesday/Thursday 12:30 PM - 2:00 PM, Wednesday 2:00 PM - 3:00 PM</td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Joseph Lui</td>
-            <td>0303</td>
-            <td>Monday 5:00 PM - 6:00 PM, Wednesday 5:00 PM - 8:00 PM</td>
-          </tr>
-          <tr>
-            <td>Jonathan Saewitz</td>
-            <td>0304</td>
-            <td>Tuesday/Thursday 6:30 PM - 8:00 PM</td>
-          </tr>
-          <tr>
-            <td>Minh Nguyen</td>
-            <td>0304</td>
-            <td>Tuesday/Thursday 5:00 PM - 6:30 PM</td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Cole Alban</td>
-            <td>0401</td>
-            <td>Monday 4:00 PM - 5:00 PM, Wednesday 5:00 PM - 6:00 PM, Friday 11:00 AM - 12:00 PM</td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Saewon Kwak</td>
-            <td>0401</td>
-            <td>Monday/Wednesday/Friday 11:00 AM - 12:00 PM</td>
-          </tr>
-          <tr>
-            <td>Puneeth Bikkumanla</td>
-            <td>0402</td>
-            <td>Tuesday/Thursday 11:00 AM - 12:30 PM</td>
-          </tr>
-          <tr>
-            <td>Nathaniel Grammel</td>
-            <td>0402/0405</td>
-            <td></td>
-          </tr>
-          <tr style="background: #F8F8F8;">
-            <td>Pujitha Lava</td>
-            <td>0403</td>
-            <td>Tuesday/Thursday 11:00 AM - 12:30 PM</td>
-          </tr>
-		<tr style="background: #F8F8F8;">
-            <td>Apoorv Bansal</td>
-            <td>0403</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Chidiebele Udeze</td>
-            <td>0404</td>
-            <td>Tuesday/Thursday 6:30 PM - 8:00 PM</td>
-          </tr>
-          <tr>
-            <td>Nicholas Guan</td>
-            <td>0404</td>
-            <td>Tuesday/Thursday 12:30 PM - 2:00 PM</td>
-          </tr>
-		<tr style="background: #F8F8F8;">
-            <td>William Poling</td>
-            <td>0405</td>
-            <td>Monday 3:00 PM - 5:00 PM, Wednesday 2:00 PM - 3:00 PM</td>
-          </tr>
-          <tr>
-            <td>Saadiq Shaik</td>
-            <td>0406</td>
-            <td>Monday/Wednesday 10:00 AM - 11:00 AM, Friday 10:00 AM - 12:00 PM</td>
-          </tr>
-          <tr>
-            <td>Yusuf Americianaki</td>
-            <td>0406</td>
-            <td>Tuesday/Thursday 3:30 - 5:00 PM</td>
-          </tr>
-		<tr style="background: #F8F8F8;">
-            <td>Ian Hammer</td>
-            <td>0407</td>
-            <td>Tuesday/Thursday 3:30 - 5:00 PM</td>
-          </tr>
-		<tr style="background: #F8F8F8;">
-            <td>Michael Williams</td>
-            <td>0407</td>
-            <td>Monday 1:00 - 2:00 PM, 6:00 - 8:00 PM</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <p style="text-align: right;"><a href="https://www.umd.edu/web-accessibility" title="UMD Web Accessibility">Web
-          Accessibility</a></p>
-      <br>
-
-    </div>
-	
+	<h1>Daily Schedule</h1>
+  <table id="schedule" >
+    <thead>
+      <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time" rowspan="2" style="text-align: right; width: 10%;">10:00 AM</td>
+        <td class="two hour" rowspan="2">Saadiq, Saewon</td>
+        <td class="none hour" rowspan="2">&nbsp;</td>
+        <td class="two hour" rowspan="2">Saadiq, Saewon</td>
+        <td class="none hour" rowspan="2">&nbsp;</td>
+        <td class="four hour" rowspan="2">Shriraj, Jasraj, Saadiq, Saewon</td>
+      </tr>
+      <tr> </tr>
+      <tr>
+        <td class="time" rowspan="2">11:00 AM</td>
+        <td class="four hour" rowspan="2">Jasraj, Michael L., Colin, Jizhen</td>
+        <td class="two hour-and-half" rowspan="3">Pujitha, Puneeth</td>
+        <td class="four hour" rowspan="2">Jasraj, Michael L., Colin, Jizhen</td>
+        <td class="two hour-and-half" rowspan="3">Nathaniel, Puneeth</td>
+        <td class="four hour" rowspan="2">Shriraj, Saadiq, Cole, Michael L.</td>
+      </tr>
+      <tr> </tr>
+      <tr>
+        <td class="time" rowspan="2">12:00 PM</td>
+        <td class="none hour" rowspan="2">&nbsp;</td>
+        <td class="none hour" rowspan="2">&nbsp;</td>
+        <td class="four hour" rowspan="2">Michael L., Mark, Shriraj, Apoorv</td>
+      </tr>
+      <tr>
+        <td class="three hour-and-half" rowspan="3">Austin, Andrew, Nicholas</td>
+        <td class="three hour-and-half" rowspan="3">Austin, Andrew, Nicholas</td>
+      </tr>
+      <tr>
+        <td class="time" rowspan="2">1:00 PM</td>
+        <td class="two hour" rowspan="2">Matthew, Michael W.</td>
+        <td class="three hour" rowspan="2">Nathaniel, Matthew, Apoorv</td>
+        <td class="four hour" rowspan="2">Michael L., Marc, Jizhen, Apoorv</td>
+      </tr>
+      <tr> </tr>
+      <tr>
+        <td class="time" rowspan="2">2:00 PM</td>
+        <td class="three hour" rowspan="2">Matthew, Harshil, Apoorv</td>
+        <td class="one hour-and-half" rowspan="3">Joanna</td>
+        <td class="three hour" rowspan="2">William, Andrew, Apoorv</td>
+        <td class="zero hour-and-half" rowspan="3">&nbsp;</td>
+        <td class="two hour" rowspan="2">Colin, Jizhen</td>
+      </tr>
+      <tr> </tr>
+      <tr>
+        <td class="time" rowspan="2">3:00 PM</td>
+        <td class="one hour" rowspan="2">Harshil</td>
+        <td class="zero hour" rowspan="2">&nbsp;</td>
+        <td class="two hour" rowspan="2">Cole, Colin</td>
+      </tr>
+      <tr>
+        <td class="three hour-and-half" rowspan="3">Ian, Yosuf, Joanna</td>
+        <td class="three hour-and-half" rowspan="3">Ian, Pujitha, Yosuf</td>
+      </tr>
+      <tr>
+        <td class="time" rowspan="2">4:00 PM</td>
+        <td class="three hour" rowspan="2">William, Cole, Harshil</td>
+        <td class="one hour" rowspan="2">William</td>
+        <td class="none hour" rowspan="8">&nbsp;</td>
+      </tr>
+      <tr> </tr>
+      <tr>
+        <td class="time" rowspan="2">5:00 PM</td>
+        <td class="two hour" rowspan="2">Joseph, Harshil</td>
+        <td class="two hour-and-half" rowspan="3">Nathaniel, Minh</td>
+        <td class="two hour" rowspan="2">Cole, Joseph</td>
+        <td class="one hour-and-half" rowspan="3">Minh</td>
+      </tr>
+      <tr> </tr>
+      <tr>
+        <td class="time" rowspan="2">6:00 PM</td>
+        <td class="one hour" rowspan="2">Michael W.</td>
+        <td class="two hour" rowspan="2">Joseph, Marc</td>
+      </tr>
+      <tr>
+        <td class="two hour-and-half" rowspan="3">Jonathan, Chidiebele</td>
+        <td class="two hour-and-half" rowspan="3">Jonathan, Chidiebele</td>
+      </tr>
+      <tr>
+        <td class="time" rowspan="2">7:00 PM</td>
+        <td class="one hour" rowspan="2">Michael W.</td>
+        <td class="one hour" rowspan="2">Joseph</td>
+      </tr>
+      <tr> </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <p style="text-align: right;"><a href="https://www.umd.edu/web-accessibility" title="UMD Web Accessibility">Web
+    Accessibility</a></p>
+  <br>
+</div>
 <script src="https://umd-header.umd.edu/build/bundle.js?search=1&search_domain=cs&events=1&news=1&schools=1&admissions=1&support=0&support_url=&wrapper=1100&sticky=0"></script>
 </body>
 </html>
